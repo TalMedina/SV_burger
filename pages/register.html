@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+
+    <h2>Sv Burger sign up page</h2>
+
+    <form name="register_form" action="/register" method="post" onsubmit="return valid()">
+        <p><input name="firstName" type="text" placeholder="First name" minlength="2" maxlength="20" ></p>
+        <p><input name="lastName" type="text" placeholder="Last name" minlength="2" maxlength="20" ></p>
+        <p><input name="email" type="email" placeholder="Email adress" ></p>
+        <div>
+            <p><input name="password" id="password" type="password" placeholder="Create password"></p>
+            <p><input name="confirmPassword" id="confirmPassword" type="password" placeholder="Confirm password" minlength="2" maxlength="20" ></p>
+            <input type="checkbox" onclick="showPassword()">Show Passwords
+        </div>
+        <p><button type="submit" style="width: 12ch; height: 3.5ch; border: none; border-radius: 15px; color: white; background-color: #157DEC ;" >Next</button></p>  
+    </form>
+    <button onclick="test()" >test</button>
+    
+    
+    <script src='script.js'></script>
+
+</body>
+</html>
